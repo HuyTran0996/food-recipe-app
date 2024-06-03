@@ -1,0 +1,71 @@
+@import "../../stylesStore/variables.scss";
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    z-index: 0;
+  }
+  .blurring {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, $clr-black, transparent);
+  }
+
+  .content {
+    position: absolute;
+    top: 0;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $clr-whitesmoke;
+    z-index: 10;
+    .searchForm {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 500px;
+      max-width: 90vw;
+      height: 60px;
+      border: 2px solid $lightgrey;
+      border-radius: 35px;
+      animation: slideBottom 1s ease forwards;
+
+      .inputBox {
+        width: 100%;
+        height: 100%;
+        font-size: 25px;
+        color: #fff;
+        background: transparent;
+        border: none;
+        outline: none;
+        padding: 0 20px;
+        &::placeholder {
+          color: $clr-whitesmoke;
+        }
+      }
+      .searchIcon {
+        color: #fff;
+        position: relative;
+        right: 10px;
+        background-color: transparent;
+        border: none;
+        transition: 0.3s;
+        cursor: pointer;
+        &:hover {
+          color: greenyellow;
+        }
+      }
+    }
+  }
+}
