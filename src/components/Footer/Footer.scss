@@ -1,0 +1,33 @@
+@import "../../stylesStore/breakpoints.scss";
+@import "../../stylesStore/variables.scss";
+.footer {
+  background: $background2;
+  padding: 20px 30px;
+  color: #cbd1cd;
+  font-size: 18px;
+  li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+  }
+  a {
+    text-decoration: none;
+    color: #cbd1cd;
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .footer-item {
+      .title {
+        margin-top: 20px;
+        font-size: 20px;
+        color: #fff;
+      }
+    }
+  }
+}
