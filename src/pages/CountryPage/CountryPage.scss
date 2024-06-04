@@ -1,0 +1,29 @@
+@import "../../stylesStore/variables.scss";
+@import "../../stylesStore//breakpoints.scss";
+.countryPage {
+  position: relative;
+  width: 100%;
+  padding: 50px;
+
+  .description-wrapper {
+    border: 3px solid orange;
+    padding: 10px 10px;
+    background: $clr-whitesmoke;
+    margin-bottom: 20px;
+    .description-title {
+      color: orange;
+      font-weight: bold;
+    }
+    .description {
+      position: relative;
+      width: 100%;
+      font-size: 16px;
+    }
+  }
+
+  .title {
+    width: fit-content;
+    font-weight: bold;
+    border-bottom: 5px solid orange;
+  }
+}

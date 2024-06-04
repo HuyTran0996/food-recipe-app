@@ -1,5 +1,35 @@
+@import "../../stylesStore/variables.scss";
 .homePage {
   .listHomeCarousel {
     margin: 15px 30px;
+  }
+  .discover {
+    padding: 30px 50px;
+
+    .flag-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      cursor: pointer;
+
+      .flag {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 15px;
+        width: 90px;
+        height: 100px;
+        justify-content: space-between;
+        transition: 0.3s;
+
+        &:hover {
+          filter: contrast(180%);
+          scale: 1.05;
+        }
+        img {
+          width: 90px;
+          object-fit: cover;
+        }
+      }
+    }
   }
 }

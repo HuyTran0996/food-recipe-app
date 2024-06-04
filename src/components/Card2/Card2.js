@@ -13,7 +13,11 @@ const Card2 = (data) => {
           <div
             className="meal"
             onClick={() =>
-              navigate(`/meal/${params.name || params.category}/${meal.idMeal}`)
+              navigate(
+                `/meal/${params.name || params.category || "Beef"}/${
+                  meal.idMeal
+                }`
+              )
             }
           >
             <img src={meal.strMealThumb} alt="poster" />

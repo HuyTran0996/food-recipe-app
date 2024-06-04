@@ -8,6 +8,7 @@ import BannerHome from "./components/BannerHome/BannerHome";
 
 import HomePage from "./pages/HomePage/HomePage";
 import CategoryPage from "./pages/CategoryPage/CategoryPage";
+import CountryPage from "./pages/CountryPage/CountryPage";
 import MealDetails from "./pages/MealDetails/MealDetails";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/meal/category/:name" element={<CategoryPage />} />
+        <Route path="/meal/country/:countryName" element={<CountryPage />} />
         <Route path="/meal/:category/:id" element={<MealDetails />} />
         {/* <Route path="/meal/:id" element={<MealDetails />} /> */}
       </Routes>

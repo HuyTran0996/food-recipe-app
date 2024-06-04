@@ -4,12 +4,16 @@ import {
   fetchFoodsInACategory,
   fetchFoodDetail,
   fetchFoodsByIngredient,
+  fetchCountries,
+  fetchFoodCountries,
 } from "../thunks/fetchFoods";
 
 const initialState = {
   dataCategories: [],
   dataFoodsInACategory: [],
   dataFoodByIngredient: [],
+  dataCountries: [],
+  dataFoodCountries: [],
 };
 
 const foodSlice = createSlice({
@@ -27,6 +31,12 @@ const foodSlice = createSlice({
     });
     builder.addCase(fetchFoodsByIngredient.fulfilled, (state, action) => {
       state.dataFoodByIngredient = action.payload;
+    });
+    builder.addCase(fetchCountries.fulfilled, (state, action) => {
+      state.dataCountries = action.payload;
+    });
+    builder.addCase(fetchFoodCountries.fulfilled, (state, action) => {
+      state.dataFoodCountries = action.payload;
     });
   },
 });

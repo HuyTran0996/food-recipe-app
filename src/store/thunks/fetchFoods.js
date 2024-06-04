@@ -33,3 +33,19 @@ export const fetchFoodsByIngredient = createAsyncThunk(
     return res.data;
   }
 );
+export const fetchCountries = createAsyncThunk(
+  "categories/fetchCountries",
+  async () => {
+    const res = await apiService.get(`list.php?a=list`);
+    console.log("fetchCountries", res);
+    return res.data;
+  }
+);
+export const fetchFoodCountries = createAsyncThunk(
+  "categories/fetchFoodCountries",
+  async (country) => {
+    const res = await apiService.get(`filter.php?a=${country}`);
+    console.log("fetchFoodCountries", res);
+    return res.data;
+  }
+);
