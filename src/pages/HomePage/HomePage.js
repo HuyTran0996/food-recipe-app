@@ -2,7 +2,6 @@ import React from "react";
 import { useSelector } from "react-redux";
 import "./HomePage.scss";
 
-import BannerHome from "../../components/BannerHome/BannerHome";
 import CarouselList from "../../components/CarouselList/CarouselList";
 
 import { useThunk } from "../../hook/use-thunk";
@@ -24,8 +23,6 @@ const HomePage = () => {
   } else {
     return (
       <div className="homePage">
-        <BannerHome />
-
         <div className="listHomeCarousel">
           <CarouselList
             data={dataCategories}

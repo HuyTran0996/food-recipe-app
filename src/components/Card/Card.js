@@ -5,10 +5,10 @@ import "./Card.scss";
 
 import noPoster from "../../assets/images/no-poster.png";
 
-const Card = ({ item, media_type }) => {
+const Card = ({ item }) => {
   const navigate = useNavigate();
   const moveTo = (item) => {
-    navigate(`/${media_type || item?.media_type}/${item.id}`);
+    navigate(`/meal/category/${item.strCategory}`);
   };
   return (
     <div className="card" onClick={() => moveTo(item)}>

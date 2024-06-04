@@ -1,0 +1,101 @@
+@import "../../stylesStore/variables.scss";
+@import "../../stylesStore/breakpoints.scss";
+.mealDetails {
+  position: relative;
+  width: 100%;
+  padding: 30px 50px;
+
+  .backToHome {
+    display: flex;
+    align-items: center;
+    background: green;
+    color: $lightgrey;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+    div {
+      font-size: 20px;
+    }
+    &:hover {
+      color: orange;
+    }
+  }
+
+  .mealDetail {
+    font-weight: bold;
+    border-bottom: 3px solid orange;
+    width: fit-content;
+    margin: 10px 0;
+  }
+
+  .content-detail {
+    position: relative;
+    width: 100%;
+    background: $clr-whitesmoke;
+    border-radius: 10px;
+    padding: 50px;
+    .part1 {
+      width: 100%;
+
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      img {
+        width: 45%;
+
+        min-width: 300px;
+      }
+      .info {
+        .name {
+          color: orange;
+          font-weight: bold;
+          border-bottom: 2px solid orange;
+        }
+        .category {
+          display: flex;
+          p {
+            font-weight: bold;
+            margin-right: 5px;
+          }
+        }
+
+        .ingredients {
+          font-size: 18px;
+          background: orange;
+          padding: 15px;
+          border-radius: 10px;
+        }
+
+        .readMore {
+          font-size: 16px;
+          display: flex;
+          width: 45%;
+          a {
+          }
+        }
+      }
+    }
+
+    .part2 {
+      margin: 50px 10px 0px 10px;
+      padding: 20px;
+      border-radius: 10px;
+      background: $grey;
+      .instructions {
+        font-weight: bold;
+      }
+      .line {
+        font-size: 18px;
+      }
+    }
+
+    .part3 {
+      margin-top: 20px;
+      .title {
+        font-weight: bold;
+        border-bottom: 3px solid orange;
+      }
+    }
+  }
+}

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import "./Header.scss";
 
@@ -9,6 +10,7 @@ import { useThunk } from "../../hook/use-thunk";
 import { fetchCategories } from "../../store/thunks/fetchFoods";
 
 const Header = () => {
+  const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [doFetchCategories, isLoading, loadingError] =
     useThunk(fetchCategories);
@@ -18,6 +20,9 @@ const Header = () => {
   });
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+  const closeMenu = () => {
+    setIsMenuOpen(false);
   };
 
   useEffect(() => {
@@ -29,7 +34,7 @@ const Header = () => {
   } else {
     return (
       <header>
-        <div className="logo">
+        <div className="logo" onClick={() => navigate(`/`)}>
           <MdFoodBank className="icon" /> <span>The Recipe.</span>
         </div>
         <div className="menu-icon" onClick={toggleMenu}>
@@ -40,11 +45,18 @@ const Header = () => {
         </div>
         <div
           className={`menu-list  ${isMenuOpen ? "show-list" : "close-list"}`}
+          onClick={closeMenu}
         >
           {!isLoading && !loadingError
             ? dataCategories?.categories?.map((item) => {
                 return (
-                  <div key={item.idCategory} className="item">
+                  <div
+                    key={item.idCategory}
+                    className="item"
+                    onClick={() =>
+                      navigate(`/meal/category/${item.strCategory}`)
+                    }
+                  >
                     {item.strCategory}
                   </div>
                 );

@@ -23,7 +23,7 @@ const responsive = {
   },
 };
 
-const CarouselList = ({ data, heading, media_type }) => {
+const CarouselList = ({ data, heading }) => {
   let data1 = data.categories || [];
 
   return (
@@ -45,7 +45,7 @@ const CarouselList = ({ data, heading, media_type }) => {
         {data1?.map((item) => {
           return (
             <div className="cardInCarousel">
-              <Card item={item} media_type={media_type} />
+              <Card item={item} />
             </div>
           );
         })}
