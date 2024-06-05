@@ -6,6 +6,7 @@ import {
   fetchFoodsByIngredient,
   fetchCountries,
   fetchFoodCountries,
+  fetchSearchFood,
 } from "../thunks/fetchFoods";
 
 const initialState = {
@@ -14,6 +15,7 @@ const initialState = {
   dataFoodByIngredient: [],
   dataCountries: [],
   dataFoodCountries: [],
+  dataSearchFood: [],
 };
 
 const foodSlice = createSlice({
@@ -37,6 +39,9 @@ const foodSlice = createSlice({
     });
     builder.addCase(fetchFoodCountries.fulfilled, (state, action) => {
       state.dataFoodCountries = action.payload;
+    });
+    builder.addCase(fetchSearchFood.fulfilled, (state, action) => {
+      state.dataSearchFood = action.payload;
     });
   },
 });

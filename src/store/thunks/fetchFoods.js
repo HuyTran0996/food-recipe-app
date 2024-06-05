@@ -49,3 +49,11 @@ export const fetchFoodCountries = createAsyncThunk(
     return res.data;
   }
 );
+export const fetchSearchFood = createAsyncThunk(
+  "categories/fetchSearchFood",
+  async (term) => {
+    const res = await apiService.get(`search.php?s=${term}`);
+    console.log("fetchSearchFood", res);
+    return res.data;
+  }
+);

@@ -9,7 +9,9 @@ import BannerHome from "./components/BannerHome/BannerHome";
 import HomePage from "./pages/HomePage/HomePage";
 import CategoryPage from "./pages/CategoryPage/CategoryPage";
 import CountryPage from "./pages/CountryPage/CountryPage";
+import SearchPage from "./pages/SearchPage/SearchPage";
 import MealDetails from "./pages/MealDetails/MealDetails";
+import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 
 function App() {
   return (
@@ -20,7 +22,9 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/meal/category/:name" element={<CategoryPage />} />
         <Route path="/meal/country/:countryName" element={<CountryPage />} />
+        <Route path="/meal/search" element={<SearchPage />} />
         <Route path="/meal/:category/:id" element={<MealDetails />} />
+        <Route path="*" element={<NotFoundPage />} />
         {/* <Route path="/meal/:id" element={<MealDetails />} /> */}
       </Routes>
       <Footer />

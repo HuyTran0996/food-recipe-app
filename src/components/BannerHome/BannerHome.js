@@ -1,14 +1,23 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { IoSearchOutline } from "react-icons/io5";
 import "./BannerHome.scss";
 
 import header_image from "../../assets/images/header_image.jpg";
 
 const BannerHome = () => {
+  const navigate = useNavigate();
   const [input, setInput] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!input.trim()) {
+      navigate(`/`);
+      setInput("");
+    } else {
+      navigate(`/meal/search?term=${input}`);
+      setInput("");
+    }
   };
   return (
     <div className="banner">
