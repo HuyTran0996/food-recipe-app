@@ -60,10 +60,16 @@ const CountryPage = () => {
     if (params.countryName === "Unknown") {
       return (
         <div className="countryPage">
-          <img
-            src={`https://upload.wikimedia.org/wikipedia/commons/2/2e/Unknown_flag_-_European_version.png?20150805095502`}
-          />
-          <div className="title">{params.countryName} Cuisine:</div>
+          <div className="title">
+            <img
+              src={
+                "https://upload.wikimedia.org/wikipedia/commons/2/2e/Unknown_flag_-_European_version.png?20150805095502"
+              }
+              style={{ width: "66px" }}
+            />{" "}
+            {params.countryName} Cuisine:
+          </div>
+
           <Card2 data={dataFoodCountries} />
         </div>
       );

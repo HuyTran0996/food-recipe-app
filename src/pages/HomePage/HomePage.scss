@@ -24,6 +24,7 @@
         &:hover {
           filter: contrast(180%);
           scale: 1.05;
+          animation: flagWave 2s infinite alternate;
         }
         img {
           width: 90px;
@@ -31,5 +32,22 @@
         }
       }
     }
+  }
+}
+@keyframes flagWave {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-10px) rotate(5deg);
+  }
+  50% {
+    transform: translateY(0) rotate(0deg);
+  }
+  75% {
+    transform: translateY(10px) rotate(-5deg);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
