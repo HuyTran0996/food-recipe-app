@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Food Recipes - Version 1 🍲🍴
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to **Food Recipes**, your ultimate guide to culinary exploration. Dive into a universe where you can discover delicious dishes from around the globe, view detailed ingredient lists, learn how to cook them, and even explore international cuisines. Built with cutting-edge technologies like React, Axios, React Router DOM, Sass, Redux, Redux Toolkit, and enhanced with React Icons for a visually appealing interface, Food Recipes offers a seamless and engaging experience tailored for modern browsers.
 
-## Available Scripts
+## Visit the app at: (Insert App URL Here)
 
-In the project directory, you can run:
+## View source code at: https://github.com/HuyTran0996/food-recipe-app
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Recipe Search**: Easily search for recipes by name, ingredients, or cuisine type.
+- **Detailed Ingredients List**: Get a comprehensive list of ingredients needed for each recipe.
+- **Cooking Instructions**: Follow step-by-step instructions to prepare your chosen dish.
+- **International Cuisine Exploration**: Discover recipes from different countries and cultures.
+- **Responsive Design**: Enjoy a consistent browsing experience across devices thanks to our responsive design powered by Sass.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+- **Frontend**: React for building the UI components, React Router DOM for client-side routing, and Redux & Redux Toolkit for state management.
+- **Styling**: Sass for writing maintainable and scalable CSS.
+- **API Calls**: Axios for making HTTP requests to external APIs.
+- **Icons**: React Icons for enhancing the visual appeal of the application.
+- **Deployment**: Hosted on Netlify platform for a smooth and reliable user experience.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Contact Information
 
-### `npm run build`
+- **Website**: https://huytran-dev.netlify.app
+- **LinkedIn**: https://www.linkedin.com/in/huy-tran-ba2a61258
+- **GitHub**: https://github.com/HuyTran0996
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Acknowledgments
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Special thanks to all contributors who have helped shape Food Recipes into what it is today. Your support and contributions are greatly appreciated.
