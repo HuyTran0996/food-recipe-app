@@ -25,7 +25,6 @@ function App() {
         <Route path="/meal/search" element={<SearchPage />} />
         <Route path="/meal/:category/:id" element={<MealDetails />} />
         <Route path="*" element={<NotFoundPage />} />
-        {/* <Route path="/meal/:id" element={<MealDetails />} /> */}
       </Routes>
       <Footer />
     </BrowserRouter>

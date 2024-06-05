@@ -35,16 +35,16 @@
     background: $clr-whitesmoke;
     border-radius: 10px;
     padding: 50px;
+
     .part1 {
       width: 100%;
 
       display: flex;
       justify-content: space-evenly;
       flex-wrap: wrap;
+
       img {
         width: 45%;
-
-        min-width: 300px;
       }
       .info {
         .name {
@@ -95,6 +95,20 @@
       .title {
         font-weight: bold;
         border-bottom: 3px solid orange;
+      }
+    }
+  }
+}
+@include mm {
+  .mealDetails {
+    padding: 30px 30px;
+    .content-detail {
+      padding: 10px;
+      font-size: 20px;
+      .part1 {
+        img {
+          width: 100%;
+        }
       }
     }
   }
