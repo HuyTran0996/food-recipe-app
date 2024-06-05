@@ -2,7 +2,7 @@
 
 Welcome to **Food Recipes**, your ultimate guide to culinary exploration. Dive into a universe where you can discover delicious dishes from around the globe, view detailed ingredient lists, learn how to cook them, and even explore international cuisines. Built with cutting-edge technologies like React, Axios, React Router DOM, Sass, Redux, Redux Toolkit, and enhanced with React Icons for a visually appealing interface, Food Recipes offers a seamless and engaging experience tailored for modern browsers.
 
-## Visit the app at: (Insert App URL Here)
+## Visit the app at: https://the-food-recipe-app.netlify.app/
 
 ## View source code at: https://github.com/HuyTran0996/food-recipe-app
 
