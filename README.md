@@ -30,4 +30,4 @@ Welcome to **Food Recipes**, your ultimate guide to culinary exploration. Dive i
 
 ## Acknowledgments
 
-Special thanks to all contributors who have helped shape Food Recipes into what it is today. Your support and contributions are greatly appreciated.
+Special thanks to https://www.themealdb.com/ who have helped shape Food Recipes
