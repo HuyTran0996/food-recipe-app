@@ -1,18 +1,14 @@
 import React, { useEffect } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import "./CategoryPage.scss";
 
 import { useThunk } from "../../hook/use-thunk";
-import {
-  fetchCategories,
-  fetchFoodsInACategory,
-} from "../../store/thunks/fetchFoods";
+import { fetchFoodsInACategory } from "../../store/thunks/fetchFoods";
 import Card2 from "../../components/Card2/Card2";
-
+import Loading from "../../components/Loading/Loading";
 const CategoryPage = () => {
   const params = useParams();
-  const navigate = useNavigate();
 
   const [doFetchCategories, isLoading, loadingError] = useThunk(
     fetchFoodsInACategory
@@ -29,7 +25,7 @@ const CategoryPage = () => {
     (category) => category.strCategory === params.name
   );
   if (isLoading) {
-    <div>Loading...</div>;
+    return <Loading />;
   } else if (loadingError) {
     <div>Error...</div>;
   } else {

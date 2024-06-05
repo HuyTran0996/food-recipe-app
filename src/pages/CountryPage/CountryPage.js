@@ -1,15 +1,14 @@
 import React, { useEffect } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import "./CountryPage.scss";
 
 import { useThunk } from "../../hook/use-thunk";
 import { fetchFoodCountries } from "../../store/thunks/fetchFoods";
 import Card2 from "../../components/Card2/Card2";
-
+import Loading from "../../components/Loading/Loading";
 const CountryPage = () => {
   const params = useParams();
-  const navigate = useNavigate();
 
   const [doFetchFoodCountries, isLoading, loadingError] =
     useThunk(fetchFoodCountries);
@@ -52,7 +51,7 @@ const CountryPage = () => {
     Vietnamese: "VN",
   };
   if (isLoading) {
-    <div>Loading...</div>;
+    return <Loading />;
   } else if (loadingError) {
     <div>Error...</div>;
   } else {

@@ -7,6 +7,7 @@ import CarouselList from "../../components/CarouselList/CarouselList";
 
 import { useThunk } from "../../hook/use-thunk";
 import { fetchCategories, fetchCountries } from "../../store/thunks/fetchFoods";
+import Loading from "../../components/Loading/Loading";
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -55,7 +56,7 @@ const HomePage = () => {
   }, []);
 
   if (isLoading || isLoading2) {
-    return <p>Loading...</p>;
+    return <Loading />;
   }
   if (loadingError || loadingError2) {
     return <p>Error...</p>;

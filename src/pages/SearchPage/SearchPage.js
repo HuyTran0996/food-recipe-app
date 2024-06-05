@@ -6,6 +6,7 @@ import "./SearchPage.scss";
 import { useThunk } from "../../hook/use-thunk";
 import { fetchSearchFood } from "../../store/thunks/fetchFoods";
 import Card2 from "../../components/Card2/Card2";
+import Loading from "../../components/Loading/Loading";
 
 const SearchPage = () => {
   const [searchParams] = useSearchParams();
@@ -23,9 +24,9 @@ const SearchPage = () => {
   }, [term]);
 
   if (isLoading) {
-    <div>Loading...</div>;
+    return <Loading />;
   } else if (loadingError) {
-    <div>Error...</div>;
+    return <div>Error...</div>;
   } else {
     return (
       <div className="searchPage">

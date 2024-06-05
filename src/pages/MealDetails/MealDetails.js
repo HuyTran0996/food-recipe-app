@@ -13,6 +13,7 @@ import { FaHome } from "react-icons/fa";
 import { MdOutlineDoubleArrow } from "react-icons/md";
 import { TbBowlSpoonFilled } from "react-icons/tb";
 import Card2 from "../../components/Card2/Card2";
+import Loading from "../../components/Loading/Loading";
 
 const MealDetails = () => {
   const navigate = useNavigate();
@@ -51,11 +52,13 @@ const MealDetails = () => {
   if (!memoizedMeals.length) {
     return (
       <p>
-        {isLoading
-          ? "Loading..."
-          : loadingError
-          ? "Error..."
-          : "Data not available"}
+        {isLoading ? (
+          <Loading />
+        ) : loadingError ? (
+          "Error..."
+        ) : (
+          "Data not available"
+        )}
       </p>
     );
   } else {
