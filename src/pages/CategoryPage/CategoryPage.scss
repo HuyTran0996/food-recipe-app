@@ -1,5 +1,6 @@
 @import "../../stylesStore/variables.scss";
 @import "../../stylesStore//breakpoints.scss";
+@import "../../stylesStore/keyframes.scss";
 .categoryPage {
   position: relative;
   width: 100%;
@@ -10,6 +11,8 @@
     padding: 10px 10px;
     background: $clr-whitesmoke;
     margin-bottom: 20px;
+    transition: 0.3s;
+    animation: slideBottom 1s ease;
     .description-title {
       color: orange;
       font-weight: bold;
@@ -25,5 +28,7 @@
     width: fit-content;
     font-weight: bold;
     border-bottom: 5px solid orange;
+    transition: 0.3s;
+    animation: slideTop 1s ease;
   }
 }

@@ -1,4 +1,5 @@
 @import "../../stylesStore/variables.scss";
+@import "../../stylesStore/keyframes.scss";
 .banner {
   position: relative;
   width: 100%;
@@ -68,8 +69,11 @@
         }
       }
     }
-    h3 {
+    h3,
+    h6 {
       text-align: center;
+      transition: 0.3s;
+      animation: slideLeft 1s linear;
     }
   }
 }

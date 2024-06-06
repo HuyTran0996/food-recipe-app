@@ -2,10 +2,15 @@
 .homePage {
   .listHomeCarousel {
     margin: 15px 30px;
+    transition: 0.3s;
+    animation: slideRight 0.5s linear;
   }
   .discover {
     padding: 30px 50px;
-
+    h3 {
+      transition: 0.3s;
+      animation: slideLeft 0.5s ease-in-out;
+    }
     .flag-content {
       display: flex;
       flex-wrap: wrap;
@@ -21,6 +26,9 @@
         justify-content: space-between;
         transition: 0.3s;
 
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
         &:hover {
           filter: contrast(180%);
           scale: 1.05;

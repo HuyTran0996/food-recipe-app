@@ -1,5 +1,6 @@
 @import "../../stylesStore/breakpoints.scss";
 @import "../../stylesStore/variables.scss";
+@import "../../stylesStore/keyframes.scss";
 .meals-list {
   display: flex;
   flex-wrap: wrap;
@@ -14,6 +15,9 @@
     overflow: hidden;
     box-shadow: 0px 0px 10px $clr-dark;
     transition: 0.3s;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
     @include mm {
       width: 370px;
     }
