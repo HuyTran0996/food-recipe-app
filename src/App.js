@@ -16,6 +16,7 @@ import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 function App() {
   return (
     <BrowserRouter>
+      {/* ádasd */}
       <Header />
       <BannerHome />
       <Routes>
